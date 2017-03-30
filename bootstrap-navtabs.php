@@ -55,8 +55,8 @@ function admin_navtabs($hook) {
     if ( 'settings_page_bootstrap-navtabs' != $hook ) {
         return;
     }
-    wp_enqueue_script( 'navtabsjs' , plugins_url( '/js/bootstrap.js',  __FILE__), array( 'jquery' ), '3.3.5', true );
-    wp_enqueue_style( 'navtabscss' , plugins_url( '/css/navtabs.css',  __FILE__), '' , '3.3.5', 'all' );
+    wp_enqueue_script( 'navtabsjs' , plugins_url( '/js/navtabs.js',  __FILE__), array( 'jquery' ), '3.3.5', true );
+    wp_enqueue_style( 'navtabscss' , plugins_url( '/css/bootstrap.css',  __FILE__), '' , '3.3.5', 'all' );
 }
 add_action( 'admin_enqueue_scripts',  __NAMESPACE__ . '\\admin_navtabs' );
 
