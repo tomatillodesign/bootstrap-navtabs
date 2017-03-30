@@ -37,16 +37,30 @@ Your Content Here.
 
 Here is the complete HTML Collapse MarkUp
 <code>
-<div class="clb-collapse-area">
+<!-- Nav tabs -->
+<div class="clb-nav-tabs-top">
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+  </li>
+</ul>
+</div>
 
-     <a class="collapse-section" data-toggle="collapse" href="#button-title-here" aria-expanded="false" aria-controls="button-title-here">
-          <div class="collapse-button-area">Button Title Here</div>
-     </a>
-
-     <div class="collapse" id="button-title-here">
-     <p>Your Content Here.</p>
-     </div>
-
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="home" role="tabpanel">HOME. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum diam vitae porttitor varius. Integer sed dictum est. Maecenas tincidunt erat nibh, vel maximus ligula tempor nec. Pellentesque facilisis sapien nisl, ut scelerisque lectus tristique et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus elit, iaculis ac erat in, commodo consequat nibh. Curabitur efficitur porttitor vulputate. Cras id viverra leo. Curabitur tempus elementum magna eu cursus. Mauris non faucibus libero.</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel">PROFILE. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum diam vitae porttitor varius. Integer sed dictum est. Maecenas tincidunt erat nibh, vel maximus ligula tempor nec. Pellentesque facilisis sapien nisl, ut scelerisque lectus tristique et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus elit, iaculis ac erat in, commodo consequat nibh. Curabitur efficitur porttitor vulputate. Cras id viverra leo. Curabitur tempus elementum magna eu cursus. Mauris non faucibus libero.</div>
+  <div class="tab-pane fade" id="messages" role="tabpanel">MESSAGES. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum diam vitae porttitor varius. Integer sed dictum est. Maecenas tincidunt erat nibh, vel maximus ligula tempor nec. Pellentesque facilisis sapien nisl, ut scelerisque lectus tristique et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus elit, iaculis ac erat in, commodo consequat nibh. Curabitur efficitur porttitor vulputate. Cras id viverra leo. Curabitur tempus elementum magna eu cursus. Mauris non faucibus libero.</div>
+  <div class="tab-pane fade" id="settings" role="tabpanel">SETTINGS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum diam vitae porttitor varius. Integer sed dictum est. Maecenas tincidunt erat nibh, vel maximus ligula tempor nec. Pellentesque facilisis sapien nisl, ut scelerisque lectus tristique et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus elit, iaculis ac erat in, commodo consequat nibh. Curabitur efficitur porttitor vulputate. Cras id viverra leo. Curabitur tempus elementum magna eu cursus. Mauris non faucibus libero.</div>
 </div>
 </code>
 
