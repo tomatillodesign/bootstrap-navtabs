@@ -31,67 +31,101 @@ There is sample HTML mark up code in the readme.txt for a selector and modal tar
 
 Here is the shortcode usage:
 
-[collapse title="Button Title Here"]
-Your Content Here.
-[/collapse]
+[tabs]
+
+[tab title="REST API”]
+
+The WordPress REST API makes it easier than ever to use WordPress in new and exciting ways, such as creating Single Page Applications on top of WordPress.
+
+[/tab]
+
+[tab title=“More about the REST API“]
+
+You could create a plugin to provide an entirely new admin experiences for WordPress, or create a brand new interactive front-end experience.
+
+[/tab]
+
+[/tabs]
+
+——————
 
 Here is the complete HTML Collapse MarkUp
+
 <code>
-<!-- Nav tabs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The DOM</title>
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+
+<div class="site-inner"><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-7177 page type-page status-publish entry" itemscope itemtype="http://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Tab Testing Only</h1>
+</header><div class="entry-content" itemprop="text"><p>Let&#8217;s see what happens here&#8230;</p>
+
 <div class="clb-nav-tabs-top">
-<ul class="nav nav-tabs" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
-  </li>
-</ul>
+  <ul class="nav nav-tabs" role="tablist">
+
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" role="tab" href="#rest">REST</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link " data-toggle="tab" role="tab" href="#rest-2">REST-2</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link " data-toggle="tab" role="tab" href="#yet-another-tab">Yet Another Tab</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link " data-toggle="tab" role="tab" href="#lets-do-one-more-tab">Lets Do One More Tab</a>
+    </li>
+
+  </ul>
 </div>
 
-<!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane fade show active" id="home" role="tabpanel">HOME. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum diam vitae porttitor varius. Integer sed dictum est. Maecenas tincidunt erat nibh, vel maximus ligula tempor nec. Pellentesque facilisis sapien nisl, ut scelerisque lectus tristique et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus elit, iaculis ac erat in, commodo consequat nibh. Curabitur efficitur porttitor vulputate. Cras id viverra leo. Curabitur tempus elementum magna eu cursus. Mauris non faucibus libero.</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel">PROFILE. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum diam vitae porttitor varius. Integer sed dictum est. Maecenas tincidunt erat nibh, vel maximus ligula tempor nec. Pellentesque facilisis sapien nisl, ut scelerisque lectus tristique et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus elit, iaculis ac erat in, commodo consequat nibh. Curabitur efficitur porttitor vulputate. Cras id viverra leo. Curabitur tempus elementum magna eu cursus. Mauris non faucibus libero.</div>
-  <div class="tab-pane fade" id="messages" role="tabpanel">MESSAGES. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum diam vitae porttitor varius. Integer sed dictum est. Maecenas tincidunt erat nibh, vel maximus ligula tempor nec. Pellentesque facilisis sapien nisl, ut scelerisque lectus tristique et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus elit, iaculis ac erat in, commodo consequat nibh. Curabitur efficitur porttitor vulputate. Cras id viverra leo. Curabitur tempus elementum magna eu cursus. Mauris non faucibus libero.</div>
-  <div class="tab-pane fade" id="settings" role="tabpanel">SETTINGS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum diam vitae porttitor varius. Integer sed dictum est. Maecenas tincidunt erat nibh, vel maximus ligula tempor nec. Pellentesque facilisis sapien nisl, ut scelerisque lectus tristique et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus elit, iaculis ac erat in, commodo consequat nibh. Curabitur efficitur porttitor vulputate. Cras id viverra leo. Curabitur tempus elementum magna eu cursus. Mauris non faucibus libero.</div>
+
+  <div class="tab-pane fade" id="rest" role="tabpanel">
+    <p>The WordPress REST API makes it easier than ever to use WordPress in new and exciting ways, such as creating Single Page Applications on top of WordPress. You could create a plugin to provide an entirely new admin experiences for WordPress, or create a brand new interactive front-end experience.</p>
+  </div>
+
+  <div class="tab-pane fade" id="rest-2" role="tabpanel">
+    <p>REST2: You could create a plugin to provide an entirely new admin experiences for WordPress, or create a brand new interactive front-end experience.</p>
+  </div>
+
+  <div class="tab-pane fade" id="yet-another-tab" role="tabpanel">
+    <p>Yet Another Tab: You could create a plugin to provide an entirely new admin experiences for WordPress, or create a brand new interactive front-end experience.</p>
+  </div>
+
+  <div class="tab-pane fade" id="lets-do-one-more-tab" role="tabpanel">
+    <p>Lets Do One More Tab: You could create a plugin to provide an entirely new admin experiences for WordPress, or create a brand new interactive front-end experience.</p>
+  </div>
+
 </div>
+
 </code>
 
 Also, here is the CSS that you may want to customize:
 
 <code>
-.collapse-button-area {
-     text-align: center;
-     width: 100%;
-     padding: 20px;
-     background: #333;
-     color: #fff;
-     border: 1px solid #333;
+/* ------- CLB Custom NavTabs Bootstrap CSS ----------- */
+
+.clb-nav-tabs-top ul {
+     margin-left: 0px;
 }
 
-a.collapse-section {
-     color: #fff;
-     font-weight: 700;
-     text-decoration: none;
+.clb-nav-tabs-top ul > li {
+    list-style-type: none;
 }
 
-.collapse, .collapsing {
-     text-align: left;
-     border: 1px solid #555;
-     background: #fafafa;
-     padding: 30px;
-     color: #333;
-}
-
-.clb-collapse-area {
-     margin-bottom: 20px;
+.tab-content {
+     margin-bottom: 26px;
+     padding-bottom: 26px;
+     border-bottom: 1px solid #ddd;
 }
 </code>
 

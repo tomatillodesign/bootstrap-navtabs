@@ -440,3 +440,16 @@ var Tab = function ($) {
 
 
 }();
+
+/**
+ * ------------------------------------------------------------------------
+ * CLB custom code, selects and activates the first tab pane automatically
+ * ------------------------------------------------------------------------
+ */
+var a = document.querySelector( '.tab-pane' );
+
+  if(a) {
+
+    a.setAttribute( 'class' , 'tab-pane fade active show' );
+
+  }

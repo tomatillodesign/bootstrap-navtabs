@@ -603,3 +603,7 @@
      padding-bottom: 26px;
      border-bottom: 1px solid #ddd;
 }
+
+.nav-tabs .nav-link.active {
+  font-weight: 700;
+}
