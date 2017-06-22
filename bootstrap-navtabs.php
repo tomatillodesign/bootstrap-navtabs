@@ -192,7 +192,7 @@ function clb_tab_shortcode( $atts, $content = null ) {
 
 
 	// Return output
-	$output = '<div class="tab-pane fade" id="' . $slug . '" role="tabpanel">'. $content . '</div>';
+	$output = '<div class="tab-pane fade" id="' . $slug . '" role="tabpanel">' . do_shortcode( $content ) . '</div>';
 
 	return $output;
 
