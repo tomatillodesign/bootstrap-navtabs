@@ -42,6 +42,9 @@ function scripts_styles() {
 
 	wp_enqueue_script( 'navtabsjs' );
 	wp_enqueue_style( 'navtabscss' );
+	
+	wp_enqueue_style( 'dashicons' );
+	
 }
 add_action( 'wp_enqueue_scripts',  __NAMESPACE__ . '\\scripts_styles' );
 
