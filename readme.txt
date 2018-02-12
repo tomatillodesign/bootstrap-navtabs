@@ -33,13 +33,13 @@ Here is the shortcode usage:
 
 [tabs]
 
-[tab title="REST API”]
+[tab title="REST API"]
 
 The WordPress REST API makes it easier than ever to use WordPress in new and exciting ways, such as creating Single Page Applications on top of WordPress.
 
 [/tab]
 
-[tab title=“More about the REST API“]
+[tab title="More about the REST API"]
 
 You could create a plugin to provide an entirely new admin experiences for WordPress, or create a brand new interactive front-end experience.
 
